@@ -1,0 +1,222 @@
+* { margin: 0; }
+
+.navbar {
+  width: 100vw;
+  background: #252525;
+  color: #fff;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  position: relative;
+  justify-content: space-between;
+  z-index: 20;
+}
+.nav-cluster {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 36px;
+  height: 100%;
+}
+.navbar-group {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar-group a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.2s;
+  letter-spacing: 0.1px;
+}
+.navbar-group a:hover { color: #c6e100; }
+.navbar-logo {
+  font-weight: 800;
+  color: #c6e100;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  margin: 0 35px;
+}
+
+.navbar-icons-area {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-left: 1px solid #fff;
+  min-width: 180px;
+  flex-shrink: 0;
+}
+.icon-btn {
+  all: unset;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+.icon-btn img { height: 22px; width: 22px; }
+.navbar-user {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 18px;
+  gap: 10px;
+}
+.user-image {
+  height: 22px;
+  width: 22px;
+}
+.user-profile-name {
+  all: unset;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+.user-profile-name img { height: 12px; margin-left: 5px; }
+
+/* Hamburger menu button (shown only on mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  z-index: 105; 
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 24px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.open-user {
+  position: absolute;
+  top: 54px;
+  background: #252525;
+  border: 1px solid #333;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  min-width: 120px;
+  z-index: 110;
+  padding: 10px 0;
+  animation: fadeIn 0.22s;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.signout-btn {
+  all: unset;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px 16px;
+  transition: background .18s;
+  border-radius: 0 0 6px 6px;
+  font-weight: 500;
+}
+.signout-btn:hover {
+  background: #c6e100;
+  color: #222;
+}
+
+
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  .nav-cluster { gap: 8px; }
+  .navbar-logo { margin: 0 10px; font-size: 18px; }
+  .navbar-group.left, .navbar-group.right { gap: 8px; }
+  .navbar-icons-area { min-width: 80px; }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .nav-cluster {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    gap: 0;
+  }
+  .navbar-group, .navbar-icons-area {
+    display: none !important;
+  }
+  .navbar-logo {
+    margin: 0;
+    height: 25px;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .hamburger {
+    display: flex !important;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 105;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 56px; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34,34,34, 0.98);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.2s;
+  }
+  .mobile-menu-content {
+    width: 90vw;
+    max-width: 320px;
+    background: #252525;
+    border-radius: 8px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    align-items: center;
+  }
+  .mobile-menu-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    width: 90%;
+    padding: 10px 0;
+    border-radius: 3px;
+    text-align: center;
+    transition: background 0.18s, color 0.18s;
+  }
+  .mobile-menu-content a:hover {
+    background: #2d2d2d;
+    color: #c6e100;
+  }
+}
+
