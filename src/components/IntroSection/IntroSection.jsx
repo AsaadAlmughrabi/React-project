@@ -7,15 +7,20 @@ import chatIcon from "../../assets/instagram.svg";
 import likeIcon from "../../assets/likeIcon.svg";
 import shareIcon from "../../assets/shareIcon.svg";
 import youtupe from "../../assets/Group 111317.svg";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 
 function IntroSection() {
+
+    const [open, setOpen] = useState(false);
   return (
+    <>
     <section className="profile-section">
       <div className="profile-card">
         <div className="profile-photo-area">
           <img src={userPhoto} alt="Jacob Jones" className="profile-photo" />
           <div className="profile-contact-row">
-            <button className="contact-btn">Contact</button>
+            <button className="contact-btn" onClick={()=>{setOpen(true)}}>Contact</button>
             <div className="profile-socials">
               <a href="#" title="Facebook">
                 <img src={facebookIcon} alt="Facebook" />
@@ -92,6 +97,21 @@ function IntroSection() {
         </div>
       </div>
     </section>
+
+          {open && (
+        <Modal
+          title="Contact Jacob Jones"
+          onClose={() => setOpen(false)}
+          onSubmit={(data) => {
+            console.log("Form values:", data);
+            setOpen(false);
+          }}
+        />
+      )}
+    </>
+
+
+   
   );
 }
 
