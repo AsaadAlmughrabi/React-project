@@ -1,0 +1,150 @@
+html, body {
+  margin: 0;
+  overflow-x: hidden;   
+}
+
+:root {
+  --green: #a5c835;        
+  --grey-bg: #f6f6f8;     
+  --black: #1d1d1d;        
+}
+
+
+.footer {
+  font-family: "Inter", Arial, sans-serif;
+  color: #000;
+}
+
+.footer__top {
+  background: var(--grey-bg);
+  padding: 40px 24px;
+}
+
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.footer__social a {
+  color: var(--green);
+  font-size: 22px;
+  transition: opacity .2s;
+}
+
+.footer__social a:hover { opacity: 0.8; }
+
+
+   
+.footer__columns {
+  display: flex;
+  flex-wrap: wrap;        
+
+  
+  margin-top: 32px;
+}
+
+.footer__col {
+  flex: 1 1 160px;         
+  min-width: 160px;
+}
+
+.brand__name {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 28px;
+  margin-left:60px;
+}
+
+
+.footer__col h3 {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: var(--green);
+}
+
+
+.footer__col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__col li:not(:last-child) { margin-bottom: 8px; }
+
+.footer__col a {
+  color: #6F7075;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer__col a:hover { text-decoration: underline; }
+
+.newsletter__form {
+  display: flex;
+}
+
+.newsletter__form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #e2e2e2;
+  border-radius: 30px 0 0 30px;
+  font-size: 14px;
+  outline: none;
+}
+
+.newsletter__form button {
+  padding: 0 24px;
+  border: none;
+  background: var(--green);
+  color: #fff;
+  border-radius: 0 30px 30px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.newsletter__form button:hover { opacity: 0.85; }
+
+
+.footer__bottom {
+  background: var(--black);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 16px 24px;
+}
+
+@media (max-width: 768px) {
+
+
+  .footer__social { justify-content: flex-start; }
+
+
+  .footer__columns {
+    flex-direction: column;
+    row-gap: 24px;         
+  }
+
+  .footer__col {
+    flex: none;        
+    width: 100%;            
+  }
+  .brand__name{
+    margin:0
+  }
+
+  
+  .newsletter__form {
+    flex-direction: row;   
+  }
+
+  .newsletter__form input {
+    border-radius: 30px 0 0 30px;
+  }
+  .newsletter__form button {
+    border-radius: 0 30px 30px 0;
+  }
+}
