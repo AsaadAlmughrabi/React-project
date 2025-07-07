@@ -1,9 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import "./NavBar.css";
-import ringIcon from "../../assets/ring-icon.svg";
-import userProfile from "../../assets/user-profile.svg";
-import arrowDown from "../../assets/down-arrow.svg";
-import logo from '../../assets/reverifi.svg'
 
 function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,7 +46,7 @@ function NavBar() {
           <a href="#">Knowledge Center</a>
         </div>
         <div className="navbar-logo">
-            <img src={logo} alt="logo" />
+            <img src="/assets/reverifi.svg" alt="logo" />
         </div>
         <div className="navbar-group right">
           <a href="#">RE PROS</a>
@@ -60,13 +56,13 @@ function NavBar() {
       </div>
       <div className="navbar-icons-area">
         <button className="icon-btn">
-          <img src={ringIcon} alt="Notifications" />
+          <img src="/assets/ring-icon.svg" alt="Notifications" />
         </button>
         <div className="navbar-user" ref={userMenuRef}>
-          <img src={userProfile} alt="User" className="user-image" />
+          <img src="/assets/user-profile.svg" alt="User" className="user-image" />
           <button className="user-profile-name" onClick={toggleUserMenu}>
             Jacob Jones
-            <img src={arrowDown} alt="dropdown" />
+            <img src="/assets/down-arrow.svg" alt="dropdown" />
           </button>
           {openUser && (
             <div className="open-user">

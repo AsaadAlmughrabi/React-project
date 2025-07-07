@@ -1,0 +1,163 @@
+.achievements-section {
+  background: #fcfcfc;
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+}
+
+.achievements-header {
+  max-width: 1180px;
+  margin: 0 auto 3.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.achievements-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+
+.achievement-pills {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.achievement-pill {
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+  font-size: 1.03rem;
+  color: #1a1a1a;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 0.7rem;
+}
+
+
+
+.badges-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Badge Card */
+.badge-card {
+  background: #fff;
+  border: 1.5px solid #f4f4f4;
+  border-radius: 9px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+  width: 240px;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.badge-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.7rem;
+}
+
+.badge-card-title {
+  font-weight: 600;
+  color: #222;
+  font-size: 1.04rem;
+  margin-bottom: 0.35rem;
+}
+
+.badge-card-date {
+  font-size: 0.96rem;
+  color: #6F7075;
+  
+}
+
+
+@media (max-width: 900px) {
+  .achievements-header,
+  .badges-row {
+    max-width: 99vw;
+    padding: 0 1rem;
+  }
+  .badge-card {
+    width: 44vw;
+    min-width: 155px;
+    height: 170px;
+  }
+}
+@media (max-width: 700px) {
+  .achievements-section {
+    padding-top: 2.2rem;
+  }
+  .achievements-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .achievements-title {
+    font-size: 2.05rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  .achievement-pills {
+    margin-bottom: 0.6rem;
+  }
+  .badges-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem 1.3rem;
+    justify-items: center;
+    width: 99vw;
+    max-width: 410px;
+    margin: 0 auto;
+  }
+  .badge-card {
+    width: 45vw;
+    min-width: 139px;
+    max-width: 190px;
+    height: 133px;
+  }
+}
+@media (max-width: 425px) {
+  .achievements-title {
+    font-size: 1.35rem;
+    text-align: center;
+  }
+  .badges-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    max-width: 100vw;
+  }
+  .badge-card {
+    width: 48vw;
+    max-width: 168px;
+    height: 125px;
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .badges-row {
+    grid-template-columns: 1fr;
+    max-width: 98vw;
+  }
+  .badge-card {
+    width: 95vw;
+    max-width: 250px;
+    margin-bottom: 1.2rem;
+  }
+}

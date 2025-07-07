@@ -1,10 +1,4 @@
-import React from 'react';
-import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import linkedIn from '../../assets/linkf.svg'
-import twitter from '../../assets/share-listing-twitter 1.svg'
-import instagram from '../../assets/instagram 1.svg'
 import './Footer.css';
-
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -17,13 +11,13 @@ function Footer() {
         {/* social icons – centered on desktop, left on mobile */}
         <div className="footer__social">
           <a href="https://instagram.com" aria-label="Instagram">
-            <img src={instagram} alt="instagram" />
+            <img src="/assets/instagram 1.svg" alt="instagram" />
           </a>
           <a href="https://linkedin.com" aria-label="LinkedIn">
-            <img src={linkedIn} alt="Linked In" />
+            <img src="/assets/linkf.svg" alt="Linked In" />
           </a>
           <a href="https://twitter.com" aria-label="Twitter">
-                <img src={twitter} alt="Twitter" />
+                <img src="/assets/share-listing-twitter 1.svg" alt="Twitter" />
           </a>
         </div>
 

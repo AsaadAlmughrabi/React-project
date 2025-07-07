@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import ReactDOM from "react-dom";
 import "./Modal.css";
-import closeIcon from "../../assets/close.svg";
+
 
 const modalRoot =
   document.getElementById("modal-root") ||
@@ -20,7 +20,6 @@ export default function Modal({ title, onClose, onSubmit }) {
       if (e.target === backdropRef.current) onClose();
     };
 
-  // Gather and send form values
   const submit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -40,7 +39,7 @@ export default function Modal({ title, onClose, onSubmit }) {
     >
       <section className="modal-card" role="dialog" aria-modal="true">
         <button aria-label="Close" className="modal-close" onClick={onClose}>
-          <img src={closeIcon} alt="" />
+          <img src="/assets/close.svg" alt="" />
         </button>
 
         <h2 className="modal-title">{title}</h2>
