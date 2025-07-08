@@ -1,9 +1,23 @@
 import "./IntroSection.css";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import ContactForm from "../Modal/ContactForm";
 
 function IntroSection() {
   const [open, setOpen] = useState(false);
+
+  function handleOpen() {
+    setOpen(prevOpen => true);
+  }
+
+  function handleClose() {
+    setOpen(prevOpen => false);
+  }
+
+  function handleSubmit(data) {
+    console.log("Form values:", data);
+    setOpen(prevOpen => false);
+  }
 
   return (
     <>
@@ -12,12 +26,12 @@ function IntroSection() {
           <div className="profile-photo-area">
             <img src="/assets/user-photo.svg" alt="Jacob Jones" className="profile-photo" />
             <div className="profile-contact-row">
-              <button className="contact-btn" onClick={() => setOpen(true)}>Contact</button>
+              <button className="contact-btn" onClick={handleOpen}>Contact</button>
               <div className="profile-socials">
                 <a href="#" title="Facebook">
                   <img src="/assets/facebook.svg" alt="Facebook" />
                 </a>
-                <a href="#" title="LinkedIn">
+                <a href="#" title="YouTube">
                   <img src="/assets/Group 111317.svg" alt="YouTube" />
                 </a>
                 <a href="#" title="LinkedIn">
@@ -29,7 +43,6 @@ function IntroSection() {
               </div>
             </div>
           </div>
-
           <div className="profile-info-area">
             <div className="profile-header-row">
               <div>
@@ -41,7 +54,6 @@ function IntroSection() {
                 </div>
               </div>
               <img src="/assets/check-icon.svg" alt="Verified" className="profile-check" />
-
               <div className="profile-actions">
                 <button className="profile-action-btn" title="Share">
                   <img src="/assets/shareIcon.svg" alt="Share" />
@@ -91,14 +103,9 @@ function IntroSection() {
       </section>
 
       {open && (
-        <Modal
-          title="Contact Jacob Jones"
-          onClose={() => setOpen(false)}
-          onSubmit={(data) => {
-            console.log("Form values:", data);
-            setOpen(false);
-          }}
-        />
+        <Modal title="Contact Jacob Jones" onClose={handleClose}>
+          <ContactForm onSubmit={handleSubmit} />
+        </Modal>
       )}
     </>
   );

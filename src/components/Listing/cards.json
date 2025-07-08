@@ -1,0 +1,93 @@
+[
+  {
+    "status": "Closed",
+    "sale": true,
+    "location": "Area 51, NV",
+    "price": 9000000,
+    "days_listed": 87,
+    "property_type": "reverify",
+    "details": {
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "other_rooms": 3
+    },
+    "likes": 1,
+    "views": 18,
+    "image_count": 1,
+    "listing_button": "View Listing",
+    "image_url": "/assets/cardsImages/imageCard1.svg"
+  },
+  {
+    "status": "Open",
+    "sale": true,
+    "location": "Area 51, NV",
+    "price": 9000000,
+    "days_listed": 487,
+    "property_type": "reverify",
+    "details": {
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "other_rooms": 3
+    },
+    "likes": 0,
+    "views": 18,
+    "image_count": 1,
+    "listing_button": "View Listing",
+    "image_url": "/assets/cardsImages/imageCard2.svg"
+  },
+  {
+    "status": "Open",
+    "sale": true,
+    "location": "Area 51, NV",
+    "price": 9000000,
+    "days_listed": 487,
+    "property_type": "reverify",
+    "details": {
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "other_rooms": 3
+    },
+    "likes": 1,
+    "views": 18,
+    "image_count": 1,
+    "listing_button": "View Listing",
+    "image_url": "/assets/cardsImages/imageCard3.svg"
+  },
+   {
+    "status": "Open",
+    "sale": true,
+    "location": "Area 51, NV",
+    "price": 9000000,
+    "days_listed": 487,
+    "property_type": "reverify",
+    "details": {
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "other_rooms": 3
+    },
+    "likes": 1,
+    "views": 18,
+    "image_count": 1,
+    "listing_button": "View Listing",
+    "image_url": "/assets/cardsImages/imageCard3.svg"
+  },
+   {
+    "status": "Open",
+    "sale": true,
+    "location": "Area 51, NV",
+    "price": 9000000,
+    "days_listed": 487,
+    "property_type": "reverify",
+    "details": {
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "other_rooms": 3
+    },
+    "likes": 1,
+    "views": 18,
+    "image_count": 1,
+    "listing_button": "View Listing",
+    "image_url": "/assets/cardsImages/imageCard3.svg"
+  }
+  
+]

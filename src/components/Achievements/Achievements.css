@@ -89,7 +89,7 @@
   .achievements-header,
   .badges-row {
     max-width: 99vw;
-    padding: 0 1rem;
+    /* padding: 0 10px; */
   }
   .badge-card {
     width: 44vw;

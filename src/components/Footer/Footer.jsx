@@ -1,14 +1,17 @@
 import './Footer.css';
 
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+    
+}
+
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="footer">
-      {/* upper light-grey part */}
+     
       <div className="footer__top">
-
-        {/* social icons – centered on desktop, left on mobile */}
         <div className="footer__social">
           <a href="https://instagram.com" aria-label="Instagram">
             <img src="/assets/instagram 1.svg" alt="instagram" />
@@ -17,18 +20,14 @@ function Footer() {
             <img src="/assets/linkf.svg" alt="Linked In" />
           </a>
           <a href="https://twitter.com" aria-label="Twitter">
-                <img src="/assets/share-listing-twitter 1.svg" alt="Twitter" />
+              <img src="/assets/share-listing-twitter 1.svg" alt="Twitter" />
           </a>
         </div>
 
-        {/* main columns */}
         <div className="footer__columns">
-          {/* brand */}
           <div className="footer__col brand">
             <h2 className="brand__name">reverifi</h2>
           </div>
-
-          {/* company */}
           <div className="footer__col">
             <h3>Company</h3>
             <ul>
@@ -38,8 +37,6 @@ function Footer() {
               <li><a href="/closed-deals">Closed Deals</a></li>
             </ul>
           </div>
-
-          {/* contact */}
           <div className="footer__col">
             <h3>Contact</h3>
             <ul>
@@ -47,16 +44,11 @@ function Footer() {
               <li><a href="mailto:sales@reverifi.com">sales@reverifi.com</a></li>
             </ul>
           </div>
-
-          {/* newsletter */}
           <div className="footer__col newsletter">
             <h3>Subscribe to our newsletter</h3>
             <form
               className="newsletter__form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                /* TODO: hook this up */
-              }}
+              onSubmit={handleNewsletterSubmit}
             >
               <input type="email" required placeholder="Enter email address" />
               <button type="submit">Subscribe</button>
@@ -65,7 +57,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* bottom black bar */}
       <div className="footer__bottom">
         Copyright © {year} reverifi. All rights reserved.
       </div>
