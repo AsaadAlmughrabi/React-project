@@ -73,10 +73,7 @@
   gap: 0.4rem;
 }
 
-.required {
-  color: #e33d2c;
-  margin-left: 2px;
-}
+
 
 .modal-form input,
 .modal-form textarea {
@@ -98,6 +95,12 @@
   border-color: var(--green);
 }
 
+/* Remove this */
+ .required::after {
+  content: "*";
+  color: #e33d2c;
+  margin-left: 3px;
+}
 
 .submit-btn {
   margin-top: 0.5rem;
