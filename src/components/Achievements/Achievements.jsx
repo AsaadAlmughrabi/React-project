@@ -1,3 +1,4 @@
+import icons from '../../icons.js';
 import './Achievements.css';
 import badges from './badges.json';
 
@@ -10,11 +11,11 @@ function Achievements() {
         <h2 className="achievements-title">Achievements</h2>
         <div className="achievement-pills">
           <div className="achievement-pill">
-            <img src="/assets/star.svg" alt="" />
+            <img src={icons.star} alt="" />
             3300 Points
           </div>
           <div className="achievement-pill">
-            <img src="/assets/badge.svg" alt="" />
+            <img src={icons.badge} alt="" />
             {badges.length} Badges
           </div>
         </div>

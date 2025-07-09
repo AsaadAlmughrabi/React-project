@@ -1,8 +1,9 @@
+import icons from '../../icons';
 import './Footer.css';
 
 function handleNewsletterSubmit(e) {
   e.preventDefault();
-    
+
 }
 
 function Footer() {
@@ -14,13 +15,13 @@ function Footer() {
       <div className="footer__top">
         <div className="footer__social">
           <a href="https://instagram.com" aria-label="Instagram">
-            <img src="/assets/instagram 1.svg" alt="instagram" />
+            <img src={icons['instagram-1'] } alt="instagram" />
           </a>
           <a href="https://linkedin.com" aria-label="LinkedIn">
-            <img src="/assets/linkf.svg" alt="Linked In" />
+            <img src={icons.link} alt="Linked In" />
           </a>
           <a href="https://twitter.com" aria-label="Twitter">
-              <img src="/assets/share-listing-twitter 1.svg" alt="Twitter" />
+              <img src={icons.twitter} alt="Twitter" />
           </a>
         </div>
 

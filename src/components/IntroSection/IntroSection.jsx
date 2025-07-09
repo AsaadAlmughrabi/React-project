@@ -2,6 +2,7 @@ import "./IntroSection.css";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import ContactForm from "../Modal/ContactForm";
+import icons from '../../icons.js'
 
 function IntroSection() {
   const [open, setOpen] = useState(false);
@@ -14,6 +15,7 @@ function IntroSection() {
     setOpen(prevOpen => false);
   }
 
+
   function handleSubmit(data) {
     console.log("Form values:", data);
     setOpen(prevOpen => false);
@@ -24,21 +26,21 @@ function IntroSection() {
       <section className="profile-section">
         <div className="profile-card">
           <div className="profile-photo-area">
-            <img src="/assets/user-photo.svg" alt="Jacob Jones" className="profile-photo" />
+            <img src={icons.userPhoto} alt="Jacob Jones" className="profile-photo" />
             <div className="profile-contact-row">
               <button className="contact-btn" onClick={handleOpen}>Contact</button>
               <div className="profile-socials">
                 <a href="#" title="Facebook">
-                  <img src="/assets/facebook.svg" alt="Facebook" />
+                  <img src={icons.facebook} alt="Facebook" />
                 </a>
                 <a href="#" title="YouTube">
-                  <img src="/assets/Group 111317.svg" alt="YouTube" />
+                  <img src={icons.youtube} alt="YouTube" />
                 </a>
                 <a href="#" title="LinkedIn">
-                  <img src="/assets/linkedin.svg" alt="LinkedIn" />
+                  <img src={icons.linkedin} alt="LinkedIn" />
                 </a>
                 <a href="#" title="Instagram">
-                  <img src="/assets/instagram.svg" alt="Instagram" />
+                  <img src={icons.instagram} alt="Instagram" />
                 </a>
               </div>
             </div>
@@ -56,10 +58,11 @@ function IntroSection() {
               <img src="/assets/check-icon.svg" alt="Verified" className="profile-check" />
               <div className="profile-actions">
                 <button className="profile-action-btn" title="Share">
-                  <img src="/assets/shareIcon.svg" alt="Share" />
+                  <img src={icons.shareicon} alt="Share" />
                 </button>
                 <button className="profile-action-btn" title="Like">
-                  <img src="/assets/likeIcon.svg" alt="Like" />
+                  <img src={icons.likeIcon} alt="Like" />
+                  
                 </button>
               </div>
             </div>
