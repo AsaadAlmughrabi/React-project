@@ -3,7 +3,6 @@ import './Footer.css';
 
 function handleNewsletterSubmit(e) {
   e.preventDefault();
-
 }
 
 function Footer() {
@@ -21,7 +20,9 @@ function Footer() {
             <img src={icons.link} alt="Linked In" />
           </a>
           <a href="https://twitter.com" aria-label="Twitter">
+
               <img src={icons.twitter} alt="Twitter" />
+
           </a>
         </div>
 

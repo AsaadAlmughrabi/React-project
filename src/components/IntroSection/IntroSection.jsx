@@ -4,6 +4,7 @@ import Modal from "../Modal/Modal";
 import ContactForm from "../Modal/ContactForm";
 import icons from '../../icons.js'
 
+
 function IntroSection() {
   const [open, setOpen] = useState(false);
 
@@ -34,7 +35,9 @@ function IntroSection() {
                   <img src={icons.facebook} alt="Facebook" />
                 </a>
                 <a href="#" title="YouTube">
+
                   <img src={icons.youtube} alt="YouTube" />
+
                 </a>
                 <a href="#" title="LinkedIn">
                   <img src={icons.linkedin} alt="LinkedIn" />

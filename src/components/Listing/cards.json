@@ -16,6 +16,7 @@
     "image_count": 1,
     "listing_button": "View Listing",
     "image_url": "/assets/imageCard1.svg"
+
   },
   {
     "status": "Open",
@@ -33,7 +34,9 @@
     "views": 18,
     "image_count": 1,
     "listing_button": "View Listing",
+
     "image_url": "/assets/imageCard2.svg"
+
   },
   {
     "status": "Open",
@@ -51,7 +54,9 @@
     "views": 18,
     "image_count": 1,
     "listing_button": "View Listing",
+
     "image_url": "/assets/imageCard3.svg"
+
   },
    {
     "status": "Open",
@@ -69,7 +74,9 @@
     "views": 18,
     "image_count": 1,
     "listing_button": "View Listing",
+
     "image_url": "/assets/imageCard3.svg"
+
   },
    {
     "status": "Open",
@@ -87,7 +94,9 @@
     "views": 18,
     "image_count": 1,
     "listing_button": "View Listing",
+
     "image_url": "/assets/imageCard3.svg"
+
   }
   
 ]

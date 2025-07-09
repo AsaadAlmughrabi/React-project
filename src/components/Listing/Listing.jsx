@@ -4,6 +4,7 @@ import Card from "./Card";
 import "./Listing.css";
 import icons from '../../icons'
 
+
 function useCardsPerRow() {
   const [cardsPerRow, setCardsPerRow] = useState(window.innerWidth <= 600 ? 1 : 3);
 
@@ -51,7 +52,9 @@ export default function Listings() {
             aria-label="Previous"
             type="button"
           >
+
             <img src={icons.leftArrow} alt="Previous" className="inline-icon" />
+
           </button>
           <div className="card-row">
             {visibleCards.map((card, idx) => (
@@ -69,7 +72,9 @@ export default function Listings() {
             aria-label="Next"
             type="button"
           >
+
             <img src={icons.rightArrow} alt="Next" className="inline-icon" />
+
           </button>
         </div>
       </div>

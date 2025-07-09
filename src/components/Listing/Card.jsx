@@ -9,15 +9,18 @@ export default function Card({ card }) {
         <img src={card.image_url} alt="House" className="listing-img" />
         <span className="listing-sale-tag">Sale</span>
         <div className="listing-location">
+
           <img src={icons.locationIcon} alt="" className="inline-icon"/>
           {card.location}
         </div>
         <div className="listing-camera">
           <img src={icons.cameraIcon} alt="" className="inline-icon" />
+
           {card.image_count}
         </div>
         {card.status === "Closed" && (
           <div className="closed-overlay">
+
             <img src={icons.closedIcon} alt="Closed" className="closed-stamp" />
           </div>
         )}
@@ -27,10 +30,12 @@ export default function Card({ card }) {
           <div className="listing-price">${card.price.toLocaleString()}</div>
           <div className="listing-action-icons">
             <button>
+
               <img src={icons.shareicon} alt="Share" className="inline-icon" />
             </button>
             <button>
               <img src={icons.likeIcon} alt="Like" className="inline-icon" />
+
             </button>
           </div>
         </div>
@@ -40,6 +45,7 @@ export default function Card({ card }) {
         <div className="listing-type">{card.sale ? "Sale" : ""}</div>
         <div className="listing-features">
           <span>
+
             <img src={icons.bedroomIcon} alt="Beds" className="inline-icon" />
             {card.details.bedrooms}
           </span>
@@ -54,12 +60,16 @@ export default function Card({ card }) {
         </div>
         <div className="listing-footer">
           <span className="likes">
+
               <img src={icons.boldLikeIcon} alt=""  className="inline-icon"/>
+
               {card.likes}
           </span>
           <div className="listing-views">
             {card.views} Views
+
             <img src={icons.viewIcon} alt="Views" className="inline-icon" />
+
           </div>
           <button className="listing-btn">{card.listing_button}</button>
         </div>
