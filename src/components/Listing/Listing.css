@@ -1,10 +1,3 @@
-/* Global box-sizing for better layout control */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .listings-root {
   background: #fafbfa;
 }

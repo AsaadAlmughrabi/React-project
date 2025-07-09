@@ -47,7 +47,7 @@ html, body {
 
 .footer__col {
   flex: 1 1 160px;         
-  min-width: 160px;
+  
 }
 
 .brand__name {
