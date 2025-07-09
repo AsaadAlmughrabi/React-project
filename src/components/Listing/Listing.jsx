@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import cards from "./cards.json";
 import Card from "./Card";
 import "./Listing.css";
+import icons from '../../icons'
+
 
 function useCardsPerRow() {
   const [cardsPerRow, setCardsPerRow] = useState(window.innerWidth <= 600 ? 1 : 3);
@@ -50,7 +52,9 @@ export default function Listings() {
             aria-label="Previous"
             type="button"
           >
-            <img src="/assets/cardIcons/leftArrow.svg" alt="Previous" className="inline-icon" />
+
+            <img src={icons.leftArrow} alt="Previous" className="inline-icon" />
+
           </button>
           <div className="card-row">
             {visibleCards.map((card, idx) => (
@@ -68,7 +72,9 @@ export default function Listings() {
             aria-label="Next"
             type="button"
           >
-            <img src="/assets/cardIcons/rightArrow.svg" alt="Next" className="inline-icon" />
+
+            <img src={icons.rightArrow} alt="Next" className="inline-icon" />
+
           </button>
         </div>
       </div>

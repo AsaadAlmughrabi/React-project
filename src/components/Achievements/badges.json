@@ -4,27 +4,27 @@
     "badge_type": "Bronze",
     "label": "Accepted Offers",
     "date": "5/27/2023",
-    "image_url": "/assets/badges/bronze.svg"
+    "image_url": "/assets/bronze.svg"
   },
   {
     "badge": "Accept 10 Offers",
     "badge_type": "Gold",
     "label": "Accepted Offers",
     "date": "4/27/2023",
-    "image_url": "/assets/badges/gold.svg"
+    "image_url": "/assets/gold.svg"
   },
   {
     "badge": "Accept 7 Offers",
     "badge_type": "Silver",
     "label": "Accepted Offers",
     "date": "5/29/2023",
-    "image_url": "/assets/badges/silver.svg"
+    "image_url": "/assets/silver.svg"
   },
   {
     "badge": "10 SAVES",
     "badge_type": "Gold",
     "label": "Saves",
     "date": "6/27/2023",
-    "image_url": "/assets/badges/goldPlus.svg"
+    "image_url": "/assets/goldPlus.svg"
   }
 ]
