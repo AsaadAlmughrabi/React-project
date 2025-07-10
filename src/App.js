@@ -11,8 +11,8 @@ function App() {
        <NavBar />
       <IntroSection/> 
       <Achievements/>
-      <Listing   />
-      <Footer/>
+       <Listing   />
+      <Footer/> 
     </>
   );
 }

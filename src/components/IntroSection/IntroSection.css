@@ -11,7 +11,6 @@
     max-width: 1100px;
     border-radius: 12px;
     background: #fff;
-
     box-shadow: 7px 10px 4px -4px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 7px 10px 4px -4px rgb(0 0 0 / 10%);
     -moz-box-shadow: 7px 10px 4px -4px rgba(0, 0, 0, 0.35);
@@ -66,7 +65,6 @@
     display: flex;
     gap: 15px;
     align-items: center;
-
 }
 
 .profile-social-circle {
@@ -99,22 +97,10 @@
     flex-direction: column;
 }
 
-.profile-header-row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 18px;
-    position: relative;
-    gap: 12px;
-}
-
 .profile-actions {
     display: flex;
     gap: 8px;
-    position: absolute;
-    top: 397px;
-    right: 0;
-    z-index: 2;
+    align-self: flex-end;
 }
 
 .profile-action-btn {
@@ -126,9 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
-
     padding: 0;
 }
 
@@ -141,9 +125,7 @@
 
 .profile-action-btn:hover,
 .profile-action-btn:focus {
-
     background: #b4bdb493;
-
 }
 
 .profile-name {
@@ -193,7 +175,7 @@
     gap: 48px;
     margin-top: 8px;
     font-size: 15px;
-    color:#6F7075;
+    color: #6F7075;
 }
 
 .profile-details-left,
@@ -211,8 +193,7 @@
 }
 
 @media (max-width: 900px) {
-
-  .profile-section {
+    .profile-section {
         padding: 0 0 24px 0;
     }
 
@@ -251,16 +232,12 @@
 
     .profile-contact-row {
         position: absolute;
-        /* new */
         left: 50%;
         top: 367px;
-        /* sits a bit outside the picture – tweak if you like */
         transform: translateX(-50%);
         flex-direction: column;
-        /* button on top, icons underneath */
-        /* gap: 16px; */
         width: 100%;
-        gap: 0
+        gap: 0;
     }
 
     .contact-btn {
@@ -269,7 +246,6 @@
         padding: 9px 0;
         margin: 0 auto 3px auto;
     }
-
 
     .profile-socials {
         gap: 0;
@@ -290,22 +266,27 @@
 
     .profile-info-area {
         width: 100%;
-        /* padding: 24px 18px 0 18px; */
+        display: flex;
         background: #fff;
     }
 
     .profile-header-row {
-
+        display: flex;
         margin-bottom: 8px;
         justify-content: center;
         position: relative;
+        align-items: flex-start;
+        gap: 8px;
     }
 
-    .profile-actions {
-        right: 100px;
-        top: 42px;
-        gap: 6px;
-    }
+     .profile-actions {
+        position: absolute;
+        order: -1;
+        align-self: center;
+        /* top: 18px; */
+        bottom: -13px;
+        /* right: 236px; */
+        left: 57%;}
 
     .profile-action-btn {
         width: 29px;
@@ -335,7 +316,7 @@
     }
 
     .profile-about-description {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .profile-details-row {
@@ -352,7 +333,6 @@
         font-size: 14px;
     }
 }
-
 
 @media (max-width: 500px) {
     .profile-section {
@@ -394,16 +374,12 @@
 
     .profile-contact-row {
         position: absolute;
-        /* new */
         left: 50%;
-        top: 367px;
-        /* sits a bit outside the picture – tweak if you like */
+        top: 356px;
         transform: translateX(-50%);
         flex-direction: column;
-        /* button on top, icons underneath */
-        /* gap: 16px; */
         width: 100%;
-        gap: 0
+        gap: 0;
     }
 
     .contact-btn {
@@ -412,7 +388,6 @@
         padding: 9px 0;
         margin: 0 auto 3px auto;
     }
-
 
     .profile-socials {
         gap: 0;
@@ -433,22 +408,26 @@
 
     .profile-info-area {
         width: 100%;
-        /* padding: 24px 18px 0 18px; */
+        display: flex;
         background: #fff;
     }
 
     .profile-header-row {
-
+        display: flex;
         margin-bottom: 8px;
         justify-content: center;
         position: relative;
     }
-
-    .profile-actions {
-        right: 100px;
-        top: 42px;
-        gap: 6px;
-    }
+    
+    /* Fixed: using correct class name .profile-actions with 's' */
+     .profile-actions {
+        position: absolute;
+        order: -1;
+        align-self: center;
+        /* top: 18px; */
+        bottom: -13px;
+        /* right: 236px; */
+        left: 57%;}
 
     .profile-action-btn {
         width: 29px;
@@ -497,7 +476,22 @@
 }
 
 @media (max-width: 400px) {
-    .profile-info-area {
-        /* padding: 22px 7px 0 7px; */
+        .profile-actions {
+        position: absolute;
+        order: -1;
+        align-self: center;
+        /* top: 18px; */
+        bottom: -13px;
+        /* right: 236px; */
+        left: 57%;}
+    
+    .profile-contact-row {
+        position: absolute;
+        left: 50%;
+        top: 354px;
+        transform: translateX(-50%);
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
     }
 }

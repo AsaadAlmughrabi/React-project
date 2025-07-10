@@ -58,16 +58,8 @@ function IntroSection() {
                   NMLS &nbsp; <span className="profile-nmls">#068543894</span>
                 </div>
               </div>
-              <img src="/assets/check-icon.svg" alt="Verified" className="profile-check" />
-              <div className="profile-actions">
-                <button className="profile-action-btn" title="Share">
-                  <img src={icons.shareicon} alt="Share" />
-                </button>
-                <button className="profile-action-btn" title="Like">
-                  <img src={icons.likeIcon} alt="Like" />
-                  
-                </button>
-              </div>
+              <img src={icons.checkIcon} alt="Verified" className="profile-check" />
+          
             </div>
             <div className="profile-about-section">
               <div className="profile-about-label">About</div>
@@ -104,7 +96,17 @@ function IntroSection() {
                 </div>
               </div>
             </div>
+                    <div className="profile-actions">
+                <button className="profile-action-btn" title="Share">
+                  <img src={icons.shareicon} alt="Share" />
+                </button>
+                <button className="profile-action-btn" title="Like">
+                  <img src={icons.likeIcon} alt="Like" />
+                  
+                </button>
+              </div>
           </div>
+   
         </div>
       </section>
 
